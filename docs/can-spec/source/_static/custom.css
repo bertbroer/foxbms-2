@@ -1,0 +1,132 @@
+/* Invi Tech branding overrides for RTD theme */
+
+/* Sidebar branding */
+.wy-side-nav-search {
+    background-color: #1a1a2e !important;
+}
+.wy-side-nav-search a {
+    color: #00B4D8 !important;
+}
+.wy-side-nav-search .icon-home::before {
+    content: "" !important;
+}
+
+/* Navigation */
+.wy-nav-side {
+    background: #16213e !important;
+}
+.wy-menu-vertical a {
+    color: #c8d6e5 !important;
+}
+.wy-menu-vertical a:hover {
+    background: #0f3460 !important;
+    color: #ffffff !important;
+}
+.wy-menu-vertical li.current > a {
+    border-right: 3px solid #00B4D8 !important;
+    background: #0f3460 !important;
+    color: #ffffff !important;
+}
+.wy-menu-vertical li.toctree-l1.current > a {
+    border-right: 3px solid #00B4D8 !important;
+    background: #0f3460 !important;
+}
+
+/* Header bar */
+.wy-nav-top {
+    background: #0077C8 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #1a1a2e !important;
+}
+h1 {
+    border-bottom: 2px solid #0077C8 !important;
+    padding-bottom: 0.3em;
+}
+
+/* Links */
+a {
+    color: #0077C8 !important;
+}
+a:hover {
+    color: #00B4D8 !important;
+}
+
+/* Tables - TI style register tables */
+table.register-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    font-size: 0.85em;
+}
+table.register-table th {
+    background-color: #0077C8 !important;
+    color: white !important;
+    padding: 8px 12px;
+    text-align: center;
+    border: 1px solid #005a9e;
+}
+table.register-table td {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+table.register-table tr:nth-child(even) {
+    background-color: #f0f7ff;
+}
+
+/* Message tables */
+table.message-table th {
+    background-color: #1a1a2e !important;
+    color: white !important;
+}
+
+/* Code blocks */
+.highlight {
+    border-left: 3px solid #0077C8;
+}
+
+/* Admonitions */
+.admonition.note {
+    border-left-color: #0077C8 !important;
+}
+.admonition.warning {
+    border-left-color: #e74c3c !important;
+}
+.admonition.tip {
+    border-left-color: #00B4D8 !important;
+}
+
+/* Cover page styling */
+.cover-title {
+    font-size: 2.2em;
+    color: #1a1a2e;
+    border-bottom: 3px solid #0077C8;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
+.cover-subtitle {
+    font-size: 1.3em;
+    color: #555;
+    margin-bottom: 2em;
+}
+.doc-info-table td {
+    padding: 4px 16px 4px 0;
+    border: none !important;
+}
+.doc-info-table td:first-child {
+    font-weight: bold;
+    color: #1a1a2e;
+}
+
+/* Footer */
+footer {
+    border-top: 2px solid #0077C8 !important;
+}
+
+/* Breadcrumbs */
+.wy-breadcrumbs li a {
+    color: #0077C8 !important;
+}
