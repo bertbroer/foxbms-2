@@ -1,0 +1,35 @@
+# e-boekhouden.nl uren automatisering - configuratie
+#
+# Kopieer dit bestand naar config.yaml en vul je gegevens in:
+#   cp config.example.yaml config.yaml
+
+eboekhouden:
+  email: "jouw-email@voorbeeld.nl"
+  password: "jouw-wachtwoord"
+
+# Standaard instellingen voor uren registratie
+defaults:
+  # Aantal uren per dag
+  hours_per_day: 8
+  # Werkdagen (0=maandag, 6=zondag)
+  workdays: [0, 1, 2, 3]  # ma, di, wo, do
+  # Project ID (gebruik 'log-hours projects' om beschikbare projecten te zien)
+  project_id: null
+  # Activiteit ID (gebruik 'log-hours activities' om beschikbare activiteiten te zien)
+  activity_id: null
+  # Standaard opmerking
+  comment: ""
+
+# Obsidian integratie (toekomstig)
+obsidian:
+  # Pad naar je Obsidian vault
+  vault_path: null
+  # Patroon om dagnotities te vinden (relatief aan vault_path)
+  daily_notes_pattern: "Daily Notes/{date}.md"
+  # Datum formaat in bestandsnaam
+  date_format: "%Y-%m-%d"
+  # Sectie header waaronder uren staan
+  hours_section: "## Uren"
+  # Regex patroon om uren te parsen uit notities
+  # Verwacht formaat: "- ProjectNaam: 4u" of "- ProjectNaam: 4 uur"
+  hours_pattern: "^- (?P<project>.+?):\\s*(?P<hours>[\\d.,]+)\\s*(?:u|uur|h|hours?)\\s*$"
